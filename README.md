@@ -11,18 +11,21 @@
 
 ![image](https://user-images.githubusercontent.com/109929695/180903949-1a715f38-b3a8-4fe9-ac73-b87298dd8edb.png)
 
-
+#### langkah kedua.
+kita akan memasukkan comand prompt cmd.
 ```
 composer create-project laravel/laravel penjualan
 
 ```
+![image](https://user-images.githubusercontent.com/109929695/180904289-ef85729b-a442-48f8-877a-bca8d07bda43.png)
+
 
 # Modul 2
 ### Soal 1
 #### Buatlah migration tabel kategori dengan menggunakan teknik yang telah di pelajari dalam modul ini.
 
 #### langkah pertama.
-pertama kita akan membuat folder model kategori, gunakan perintah artisan pada command prompt sebagai berikut.
+pertama kita akan membuat folder model kategori, gunakan perintah artisan pada terminal VS CODE sebagai berikut.
 ```
 php artisan make:model kategori
 ```
@@ -47,8 +50,11 @@ class kategori extends Model
 
 ```
 
+![image](https://user-images.githubusercontent.com/109929695/180904779-e3196608-8819-49c6-a8cd-246b17d0b3eb.png)
+
+
 #### langkah ketiga.
-selanjutnya kita akan membuat createKategoriTable, dan gunakan perintah comand prompt dibawah ini.
+selanjutnya kita akan membuat createKategoriTable, dan gunakan perintah artisan di terminal VS CODE dibawah ini.
 
 ```
 php artisan make:migration create_kategori_table
@@ -91,9 +97,11 @@ return new class extends Migration
     }
 };
 ```
+![image](https://user-images.githubusercontent.com/109929695/180904825-9d2ab354-a4be-491c-9495-e81d8c40c6ea.png)
+
 
 #### langkah kelima.
-langkah berikutnya membuat kategoriTableSeeder, dengan menggunakan comand prompt dibawah ini.
+langkah berikutnya membuat kategoriTableSeeder, dengan menggunakan perintah artisan di terminal VS CODE dibawah ini.
 
 ```
 php artisan make:seeder kategoriTableSeeder
@@ -141,6 +149,8 @@ class kategoriTableSeeder extends Seeder
 }
 
 ```
+![image](https://user-images.githubusercontent.com/109929695/180904881-3bfcac4d-31cb-49d2-89f2-c2d9f6cabf34.png)
+
 
 #### langkah ke tujuh.
 lalu kita akan menambahkan codingan di modul DatabaseSeeder seperti berikut.
@@ -169,3 +179,13 @@ class DatabaseSeeder extends Seeder
 }
 
 ```
+![image](https://user-images.githubusercontent.com/109929695/180904916-cc47df4c-e88e-4e6c-9866-2a756aae5d28.png)
+
+
+### soal 2
+#### 2. Berikan data dengan menggunakan seeder yang telah anda pelajari pada modul ini.
+
+Seeder digunakan untuk membuat contoh data pada database. Fitur ini sangat bermanfaat saat 
+melakukan pengembangan suatu sistem yang dimana kita memerlukan suatu contoh data. Apalagi 
+ketika membutuhkan contoh data yang banyak, fitur ini dapat membantu dari pada memasukan data 
+satu persatu scara manual melalui PhpMyAdmin.
