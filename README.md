@@ -6,8 +6,13 @@
 
 ### soal 1
 #### 1. Lakukan proses instalasi framework laravel kedalam folder dengan nama masing-masing.
-```
 
+#### pertama kita akan merubah title nama.
+
+![image](https://user-images.githubusercontent.com/109929695/180903949-1a715f38-b3a8-4fe9-ac73-b87298dd8edb.png)
+
+
+```
 composer create-project laravel/laravel penjualan
 
 ```
